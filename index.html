@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Task Management System</h1>
+    <hr>
+    <div class="task-form">
+        <h2>Create Task</h2><hr>
+        <form id="taskForm">
+            <label for="title">Title :</label>
+            <input type="text"  id="title" placeholder="Enter Title" required title="Title deu na balla form submit hunxa"><br><br><hr>
+
+            <label for="description">Description :</label>
+            <textarea  id="description" required placeholder="Describe about Task" title="Description rakha na balla form submit hunxa"></textarea> <br><br><hr>
+
+             
+            <label for="deadline">Deadline :</label>
+            <input type="date" id="deadline" required title="Deadline kaile ho?"> 
+           
+
+            <label for="priority">Priority</label>
+            <select  id="priority" required title="Priority dherai thorai ke xa?">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select> 
+          
+
+            <label for="category">Category :</label>
+            <select id="category" required title="Kun category ho?">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="School">School</option>
+            </select><br><br> <hr>
+            
+
+            <button type="submit"><strong>Submit Task</strong></button>
+            <hr>
+        </form>
+
+        <div>
+            <div class="task-list">
+                <h2>Task List</h2>  
+                <label for=""><strong>Search :</strong></label>
+                <input type="text" id="search" placeholder="Search tasks here"><hr>
+                <div id="taskContainer"> </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

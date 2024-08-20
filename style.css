@@ -1,0 +1,141 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 223, 198);
+    height: auto;
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+input,textarea,button,select{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(208, 230, 239);
+}
+button{
+    color: black;
+    background-color: rgb(236, 153, 85);
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(243, 83, 104);
+    color: white;
+  
+}
+option{
+    color: rgb(8, 6, 6);
+    background-color:rgb(243, 223, 198);
+    font-size: small;
+}
+
+
+.task-form{
+    margin-bottom: 20px;
+}
+
+.task-list{
+    margin-top: 20px;
+}
+.task-item{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.completed{
+    background-color: #ddf266;
+}
+
+hr{
+    width: 500px;
+}
+
+@media (max-width: 768px) {
+    body{
+        background-color: rgb(242, 206, 162);
+    }
+    .task-form, .task-list {
+        max-width: 90%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    textarea,
+    input[type="date"],
+    select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 30%;
+        padding: 10px;
+    }
+    hr{
+        width: auto;
+        color: blue;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        background-color: rgb(240, 191, 132);
+    }
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    .task-form, .task-list {
+        padding: 10px;
+    }
+
+    label {
+        margin-bottom: 3px;
+    }
+
+    input[type="text"],
+    textarea,
+    input[type="date"],
+    select {
+        font-size: 1em;
+        width: 80%;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    hr {
+        margin: 10px 0;
+        width: auto;
+        color: #f00e0e;
+    }
+}
+@media (max-width: 480px) {
+    button{
+        width: auto;
+    }
+}
+@media (max-width: 280px) {
+    button{
+        width: 50%;
+    }
+}
+@media (max-width: 225px) {
+    button{
+        width: 70%;
+    }
+}
+@media (max-width: 165px) {
+    button{
+        width: 100%;
+    }
+}
